@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archor tag</title>
+  </head>
+  <body>
+    <h1>Chicken</h1>
+    <!-- Atributos-->
+    <!-- que serão usados como tags dentro do <a> de archor-->
+    <!-- href de Hypertext Reference -->
+    <a
+      href="file:///C:/Users/Emanuelle%20Westphalen/Desktop/Projetos%20git/Front-end/Bootcamp%20WEBDEV%20-%20Steele%20Colt/HTML/1-%20html%20boilerplate.html"
+      >HTML BOILERPLATE</a
+    >
+    <br />
+    <br />
+
+    <a
+      href="file:///C:/Users/Emanuelle%20Westphalen/Desktop/Projetos%20git/Front-end/Bootcamp%20WEBDEV%20-%20Steele%20Colt/HTML/ARCHOR%20TAG%20TAG.html"
+      >ABOUT ME</a
+    >
+    <br />
+    <br />
+
+    <a
+      href="file:///C:/Users/Emanuelle%20Westphalen/Desktop/Projetos%20git/Front-end/Bootcamp%20WEBDEV%20-%20Steele%20Colt/HTML/1-%20Image%20Tag.html"
+      >IMAGE HERE</a
+    >
+    <!--http -->
+    <!--Hypertext Transfer Protocol -->
+    <!-- www-->
+    <!-- word wide web-->
+    <!-- caso queira referenciar um site use http e www para certificar que irá sem erro.-->
+    <p>
+      <a href="https://www.lipsum.com/feed/html">Lorem</a> ipsum dolor sit amet
+      consectetur adipisicing elit. Nisi dicta itaque minima architecto
+      blanditiis vero, iste modi deserunt. Nam facilis ut quis placeat ratione
+      praesentium quia rerum doloremque beatae nesciunt.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident
+      eum est obcaecati soluta quidem, corporis placeat illo impedit repellendus
+      quae ipsam pariatur laudantium sit aspernatur nulla. Odio, porro possimus.
+    </p>
+  </body>
+</html>
