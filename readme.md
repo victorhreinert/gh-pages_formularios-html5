@@ -1,5 +1,5 @@
-##temas essenciais nesta sessão de HTML
-##para de destacar nessa sessão.
+## temas essenciais nesta sessão de HTML
+## para de destacar nessa sessão.
 
 >Crucial: 
 
