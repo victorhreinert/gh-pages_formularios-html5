@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 Marathon 2022</title>
+  </head>
+  <body>
+    <h1>Race Registration</h1>
+    <form action="/q=">
+      <div>
+        <label for="first">Fisrt Name</label>
+        <input type="text" id="first" name="fistname" required placeholder="First Name" />
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="lastname"  required placeholder="Last Name" />
+      </div>
+      <p>Select a Race:</p>
+
+      <div>
+        <label for="5k-run">Fun Run 5k</label>
+        <input type="radio" required id="5k-run" value="5k-run" name="racetype" />
+      </div>
+      <div>
+        <label for="10k-run">Half Marathon</label>
+        <input type="radio" id="10k-run" value="10k-run" name="racetype" />
+      </div>
+      <div>
+        <label for="20k-run">Full Marathon</label>
+        <input type="radio" id="20k-run" value="20k-run" name="racetype" />
+      <div>
+      
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" required id="email" placeholder="E-mail" />
+        <label for="password">Password:</label>
+        <input type="password" required id="password" placeholder="Password" />
+      </div>
+      <div>
+      <label for="agegrup">Age Grup</label>
+        <select name="agegrup" id="agegrup">
+          <option value="">Please choose an age</option>
+          <option value="minor">under 18</option>
+          <option value="pre-adult">18-26</option>
+          <option value="adult">27-37</option>
+          <option value="wine-adult">38-49</option>
+          <option value="plus">50+</option>
+        </select>
+      </div>
+    
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

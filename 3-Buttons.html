@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms DEMO</title>
+    <h1>Forms Demo</h1>
+  </head>
+  <body>
+    <section>
+    <form action="/img">
+      <p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="User login" name="name" />
+        <!-- atributo name muito importante para o formlario localizar e organizar melhor os conteudos e dados.-->
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          name="pass"
+        />
+      </p>
+      <p>
+        <label for="color">Enter a color:</label>
+        <input type="color" id="color" name="" />
+      </p>
+      <p>
+        <label for="number">Enter a number:</label>
+        <input
+          type="number"
+          id="number"
+          placeholder="1-100"
+          name="number" 
+          min="0"
+          max="100"
+          step="1"
+          value="50"
+        />
+      </p>
+      <!-- esse botão não enviará para a localização do formulario -->
+      <!-- por caso do atributo type-->
+      <button type="button">Botão regular não irá submiter</button>
+
+      <button>Submit</button>
+      <!--esse é outro jeito possivel de fazer um botão-->
+      <!--não muito usado-->
+      <input type="submit" value="Input click-me" />
+      <!--botão fora da tag do formulario reage diferente que dentro-->
+    </form>
+    </section>
+    <hr />
+
+    <h2>Forms request</h2>
+    <section>
+    <!--Simplificando os formularios e anexando com outros sites com form action -->
+    <form action="https://www.reddit.com/search/">
+      <label for="search-rd">
+        <strong> Reddit</strong> form button
+      </label>
+      <input type="text" name="q" id="search-rd" placeholder="Search" />
+      <button><strong>Submit to Reddit </strong></button>
+    </form>
+    <p>
+    <form action="https://www.google.com/search?">
+      <label for="search-gg">
+        <strong>Google</strong> form button
+      </label>
+      <input type="text" name="q" placeholder="Search" id="search-gg" />
+      <button><strong>Submit to Google</strong></button>
+    </form>
+    </p>
+ 
+    <form action="https://www.youtube.com/results?">
+      <label for="search-yt"
+        ><strong> Youtube </strong> form button</label
+      >
+      <input type="text" name="search_query" id="search-yt" placeholder="Search" />
+      <button><strong>Submit to Youtube </strong></button>
+    </form>
+    <p>
+    <form action="https://www.facebook.com/search/top/?">
+      <label for="search-fb"> <strong>Facebook</strong> form button</label>
+      <input type="text" placeholder="Search" name="q" id="search-fb" />
+      <button><strong>Submit to Facebook</strong></button>
+    </p>
+    </form>
+    </section>
+    <hr />
+
+    <h3>More inputs</h3>
+    <section>
+   <p>
+    <form action="/tacos">
+      <label for="agree">I agree with all the terms</label>
+        <!-- pré selecionado com checked na aba checkbox-->
+        <input type="checkbox" name="agree" id="agree" checked />
+      <hr />
+    </p>  
+    </section>
+
+    <h4>Choose a Video Game prise</h4>
+    <section> 
+        
+      <!-- para conectar os marcadores radio o nome(name) tem que ser o mesmo-->
+      <!-- marcadores tipo checkbox-->
+      <label for="ps5">PS5</label>
+      <input type="radio" name="videogame" id="ps5">
+
+      <label for="xbox">XBOX SERIES X</label>
+      <input type="radio" name="videogame" id="xbox">
+
+      <label for="nintendo">NINTENDO SWITCH</label>
+      <input type="radio" name="videogame" id="nintendo">
+      <button>Submit</button>
+    </section>
+    <hr />
+    <h5>Escolha seu pet e idade</h5>
+      <!-- selecionar opções, cria uma lista que deve selecionar-->
+    <section>
+        <label for="pet-select">Choose a pet:</label>       
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option</option>
+            <option value="dog">Dog</option>
+            <!-- pré selecionado-->
+            <option value="cat" selected>Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+        <hr />
+        
+        <label for="pet-age">Pet age:</label>
+        <!-- no tipo de range voce pode controlar o minimo e maximo as quantidade de casa que irá pular-->
+        <!-- e valor qual começará com o value-->
+        <input type="range" id="pet-age" min="0" max="10" step="1"  value="1" name="pet_age">
+        <button>submit</button>
+    </section>
+
+    <hr />
+    <h6> Reclamações</h6>
+    <section>
+            <label for="txt">Any Special Request?</label>
+            <p>
+
+            <textarea name="client-txt" id="txt" cols="30" maxlength="20" rows="10" placeholder="digite reclamações"></textarea>
+            
+        </p>
+            <button>Submit</button>
+    </section>
+    <hr />
+
+    <h6>Validations- html requirement/pattern </h6>
+   
+    <section>
+         
+        <form action="">
+            <p>
+            <label for="name">Enter first name:</label>
+            <!-- required um atributo necessário e importante do dia a dia do dev front. -->
+            <!--fará com o que o botão só enviará os dados ao servidor preenchido o campo com os dados necessario.-->
+            <input type="text" id="name" placeholder="Fisrt name" name="id-name" required>
+            </p>
+             <p>  
+            <label for="user.valid">Username:</label>
+            <input type="text" id="user.valid" name="username" placeholder="Username" required minlength="3" maxlength="10"> 
+                    <!-- required para username será de 3 caractere conforme definido no input-->
+            </p> 
+            <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="e-mail"
+                min="5" maxlength="25"
+                required placeholder="E-mail">
+            <!-- required para email será a obrigatoriedade do @ -->
+            </p>
+             <p>
+            <label for="url-id">URL:</label>
+            <input type="url" id="url-id" placeholder="Url" name="url" required min="5"/>
+             <!-- required url é "http:www.(...).com" -->
+             </p>
+            <p>
+            <button>Submit</button>
+            </p>
+        </form>
+        </section>
+
+    </form>
+  </body>
+</html>

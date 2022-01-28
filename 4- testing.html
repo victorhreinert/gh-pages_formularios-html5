@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open graph da disponibilidade para você visualizar melhor seu conteudo fora do site-->
+    <!-- Inventada pelo facebook utilidade muito util.-->
+    <meta />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Favorites</legend>
+        <div>
+          <label>Color</label>
+        </div>
+        <div>
+          <input list="color-list" type="text" />
+          <!-- input normal com uma propiedade lista-->
+          <datalist id="color-list">
+            <option value="Red"></option>
+            <option value="Green"></option>
+            <option value="Blue"></option>
+            <option value="Yellow"></option>
+            <option value="Black"></option>
+            <option value="White"></option>
+            <option value="Purple"></option>
+            <option value="Cyan"></option>
+            <option value="Pink"></option>
+          </datalist>
+          <!-- datalist irá auto completar o campo caso o usuario 
+            digite alguma infomação que tenha dentro da tag datalist -->
+        </div>
+        <br />
+        <div>
+          <label>Fruit</label>
+        </div>
+        <div>
+          <input list="fruit-list" type="text" />
+          <datalist id="fruit-list">
+            <option value="Orange"></option>
+            <option value="Apple"></option>
+            <option value="Banana"></option>
+            <option value="Watermellon"></option>
+            <option value="Kiwi"></option>
+            <option value="Tomato"></option>
+          </datalist>
+        </div>
+
+        <div>
+          <button>Submit</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <hr />
+
+    <section>
+      <header>
+        <label>Cor</label>
+      </header>
+      <form>
+        <fieldset>
+          <section>
+            <input type="color" />
+          </section>
+          <section>
+            <input type="time" />
+          </section>
+          <section>
+            <progress value="50" max="100">%50</progress>
+          </section>
+
+          <p>H <sub>2</sub>0</p>
+          <p>O <sub>2</sub></p>
+          <p>X <sup>2</sup>*y <sup>4</sup></p>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <picture>
+        <!-- <source srcset="img/keep calm.jpg" type="image/webp" />-->
+        <source srcset="img/html5.png 100w" media="(min-width: 900px)" />
+
+        <img src="img/html.jpg" style="width: 700px" />
+      </picture>
+    </section>
+
+    <template> </template>
+    <script></script>
+  </body>
+</html>
