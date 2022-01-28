@@ -11,24 +11,15 @@
     <!-- Atributos-->
     <!-- que serão usados como tags dentro do <a> de archor-->
     <!-- href de Hypertext Reference -->
-    <a
-      href="file:///C:/Users/Emanuelle%20Westphalen/Desktop/Projetos%20git/Front-end/Bootcamp%20WEBDEV%20-%20Steele%20Colt/HTML/1-%20html%20boilerplate.html"
-      >HTML BOILERPLATE</a
-    >
+    <a href="1-html boilerplate.html">HTML BOILERPLATE</a>
     <br />
     <br />
 
-    <a
-      href="file:///C:/Users/Emanuelle%20Westphalen/Desktop/Projetos%20git/Front-end/Bootcamp%20WEBDEV%20-%20Steele%20Colt/HTML/1%20-ARCHOR%20TAG%20TAG.html"
-      >ABOUT ME</a
-    >
+    <a href="1-ARCHOR TAG.html">ABOUT ME</a>
     <br />
     <br />
 
-    <a
-      href="file:///C:/Users/Emanuelle%20Westphalen/Desktop/Projetos%20git/Front-end/Bootcamp%20WEBDEV%20-%20Steele%20Colt/HTML/1-%20Image%20Tag.html"
-      >IMAGE HERE</a
-    >
+    <a href="1-Image Tag.html">IMAGE HERE</a>
     <!--http -->
     <!--Hypertext Transfer Protocol -->
     <!-- www-->
@@ -46,5 +37,338 @@
       eum est obcaecati soluta quidem, corporis placeat illo impedit repellendus
       quae ipsam pariatur laudantium sit aspernatur nulla. Odio, porro possimus.
     </p>
+       <p>
+      <a href="https://www.lipsum.com/feed/html">Lorem</a> ipsum
+      <span>dolor</span> sit amet consectetur adipisicing elit. Nisi dicta
+      <br />
+      itaque minima architecto blanditiis vero
+      <!-- super script = sup -->
+      <!-- destaca com infase texto -->
+      <sup><a href="www.google">[2]</a></sup> , iste modi deserunt. Nam facilis
+      <br />
+      ut quis placeat ratione praesentium quia rerum doloremque beatae nesciunt.
+      <br />
+    </p>
+
+    <p>
+      <spam>Lorem </spam> ipsum dolor sit amet consectetur adipisicing elit.
+      Nisi provident eum <br />
+      est obcaecati soluta quidem, corporis placeat illo impedit repellendus
+      quae<br />
+      ipsam pariatur laudantium sit aspernatur nulla. Odio, porro possimus.
+    <hr />
+    <!-- math stuff -->
+      <h2> <i> I like</i> H<sub>2</sub>O</h2>
+      <li>1<sub>2</sub> + 4 <sub>9</sub> = 5 <sub>11</sub>  </li>
+       
+
+    </p>
+
+      <h2>Forms request</h2>
+    <section>
+    <!--Simplificando os formularios e anexando com outros sites com form action -->
+    <form action="https://www.reddit.com/search/">
+      <label for="search-rd">
+        <strong> Reddit</strong> form button
+      </label>
+      <input type="text" name="q" id="search-rd" placeholder="Search" />
+      <button><strong>Submit to Reddit </strong></button>
+    </form>
+    <p>
+    <form action="https://www.google.com/search?">
+      <label for="search-gg">
+        <strong>Google</strong> form button
+      </label>
+      <input type="text" name="q" placeholder="Search" id="search-gg" />
+      <button><strong>Submit to Google</strong></button>
+    </form>
+    </p>
+ 
+    <form action="https://www.youtube.com/results?">
+      <label for="search-yt"
+        ><strong> Youtube </strong> form button</label
+      >
+      <input type="text" name="search_query" id="search-yt" placeholder="Search" />
+      <button><strong>Submit to Youtube </strong></button>
+    </form>
+    <p>
+    <form action="https://www.facebook.com/search/top/?">
+      <label for="search-fb"> <strong>Facebook</strong> form button</label>
+      <input type="text" placeholder="Search" name="q" id="search-fb" />
+      <button><strong>Submit to Facebook</strong></button>
+    </p>
+    </form>
+    </section>
+    <hr />
+
+    <h3>More inputs</h3>
+    <section>
+   <p>
+    <form action="/tacos">
+      <label for="agree">I agree with all the terms</label>
+        <!-- pré selecionado com checked na aba checkbox-->
+        <input type="checkbox" name="agree" id="agree" checked />
+      <hr />
+    </p>  
+    </section>
+
+    <h4>Choose a Video Game prise</h4>
+    <section> 
+        
+      <!-- para conectar os marcadores radio o nome(name) tem que ser o mesmo-->
+      <!-- marcadores tipo checkbox-->
+      <label for="ps5">PS5</label>
+      <input type="radio" name="videogame" id="ps5">
+
+      <label for="xbox">XBOX SERIES X</label>
+      <input type="radio" name="videogame" id="xbox">
+
+      <label for="nintendo">NINTENDO SWITCH</label>
+      <input type="radio" name="videogame" id="nintendo">
+      <button>Submit</button>
+    </section>
+    <hr />
+    <h5>Escolha seu pet e idade</h5>
+      <!-- selecionar opções, cria uma lista que deve selecionar-->
+    <section>
+        <label for="pet-select">Choose a pet:</label>       
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option</option>
+            <option value="dog">Dog</option>
+            <!-- pré selecionado-->
+            <option value="cat" selected>Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+        <hr />
+        
+        <label for="pet-age">Pet age:</label>
+        <!-- no tipo de range voce pode controlar o minimo e maximo as quantidade de casa que irá pular-->
+        <!-- e valor qual começará com o value-->
+        <input type="range" id="pet-age" min="0" max="10" step="1"  value="1" name="pet_age">
+        <button>submit</button>
+    </section>
+
+    <hr />
+    <h6> Reclamações</h6>
+    <section>
+            <label for="txt">Any Special Request?</label>
+            <p>
+
+            <textarea name="client-txt" id="txt" cols="30" maxlength="20" rows="10" placeholder="digite reclamações"></textarea>
+            
+        </p>
+            <button>Submit</button>
+    </section>
+    <hr />
+
+    <h6>Validations- html requirement/pattern </h6>
+   
+    <section>
+         
+        <form action="">
+            <p>
+            <label for="name">Enter first name:</label>
+            <!-- required um atributo necessário e importante do dia a dia do dev front. -->
+            <!--fará com o que o botão só enviará os dados ao servidor preenchido o campo com os dados necessario.-->
+            <input type="text" id="name" placeholder="Fisrt name" name="id-name" required>
+            </p>
+             <p>  
+            <label for="user.valid">Username:</label>
+            <input type="text" id="user.valid" name="username" placeholder="Username" required minlength="3" maxlength="10"> 
+                    <!-- required para username será de 3 caractere conforme definido no input-->
+            </p> 
+            <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="e-mail"
+                min="5" maxlength="25"
+                required placeholder="E-mail">
+            <!-- required para email será a obrigatoriedade do @ -->
+            </p>
+             <p>
+            <label for="url-id">URL:</label>
+            <input type="url" id="url-id" placeholder="Url" name="url" required min="5"/>
+             <!-- required url é "http:www.(...).com" -->
+             </p>
+            <p>
+            <button>Submit</button>
+            </p>
+        </form>
+        </section>
+
+    </form>
+
+     <hr />
+  <ol>
+    <li><strong>tabela:</strong>A tag utilizada para criar uma tabela HTML é a tag <a href="">table</a> </table>
+    </li>
+    <li> <strong>tr:</strong>define uma fileira de células em uma tabela.</li>
+    <li> <strong>td:</strong>define uma célula de uma tabela que contém dados.</li>
+    <li> <strong>th:</strong>define uma célula como cabeçalho de um grupo de células de uma tabela.</li>
+
+    <li><strong>thead: </strong> define um conjunto de linhas definindo a cabeça das colunas da tabela.</li>
+    <li><strong>tbody:</strong> encapsula um conjunto de linhas de mesa ( elementos), indicando que eles compõem o corpo
+      da tabela tr table</li>
+    <li><strong>tfoot:</strong>efine um conjunto de linhas resumindo as colunas da tabela.</li>
+    <li><strong>colgroup:</strong>colspan and rowspan </li>
+    <li><strong>caption:</strong></li>
+  </ol>
+  <hr />
+  </p>
+  <p> <strong>Harvester Birds</strong></p>
+  <table>
+    <thead>
+      <tr>
+      <th>Animal</th>
+      <th>Average mass</th>
+      <th>Maxime mass</th>
+      <th>Flighted</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Common ostrich</td>
+        <td>104(230)</td>
+        <td>156.8 (346)</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>Somali ostrich</td>
+        <td>90 (200)</td>
+        <td>156.8 (346)</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>South. cassowary</td>
+        <td>45 (99)</td>
+        <td>85 (190)</td>
+        <td>yes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr />
+  <p> <strong> Tabela 2</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Animal</th>
+        <th colspan="2">Average mass</th>
+        <th rowspan="2">Flighted</th>
+      </tr>
+      <tr>
+        <th>KG</th>
+        <th>LB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emu</td>
+        <td>73</td>
+        <td>150</td>
+        <td> No </td>
+      </tr>
+      <tr>
+        <td>Emperor penguin</td>
+        <td>69</td>
+        <td>100</td>
+        <td>No</td>
+
+      </tr>
+      <tr>
+        <td>Mute swan</td>
+        <td>11.87 </td>
+        <td>26.2 </td>
+        <td>Yes</td>
+
+      </tr>
+      <tr>
+        <td>Great bustard</td>
+        <td>10.6</td>
+        <td>23.4</td>
+        <td>Yes</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+   <h1>Race Registration</h1>
+  </head>
+  <body>
+    <form action="/registration">
+      <section>
+        <p>
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="First Name"
+            name="firt-name"
+            required
+          />
+
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="last-name"
+            placeholder="Last Name"
+            required
+          />
+        </p>
+        <label for="type-race">Select a Race:</label>
+        <p>
+          <label for="type-race">Fun Run 5k:</label>
+          <input type="radio" id="5k" name="type-race" required />
+          <br />
+          <label for="10k">Half Marathon<strong>10k</strong>: </label>
+          <input type="radio" id="10k" name="type-race" />
+          <br />
+          <label for="20k">Full Marathon <strong>20k</strong>:</label>
+          <input type="radio" id="20k" name="type-race" />
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="password"
+            required
+            id="password"
+          />
+        </p>
+        <p>
+          <label for="age-grup">Age Grup</label>
+          <select name="age" id="age-grup" required>
+            <option value="">Please choose an age</option>
+            <option value="under18">under 18</option>
+            <option value="pre-aldut">18-25</option>
+            <option value="aldut">26-36</option>
+            <option value="wine">37-50</option>
+            <option value="oldwine">50 +</option>
+          </select>
+        </p>
+      </section>
+
+      <tfooter>
+        <button>Submit</button>
+      </tfooter>
+    </form>
+
+
+
+
+
   </body>
 </html>
