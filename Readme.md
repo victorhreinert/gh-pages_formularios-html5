@@ -1,27 +1,28 @@
-## temas essenciais nesta sessão de HTML
-## para de destacar nessa sessão.
+# HTML-gh-pages
 
->Crucial: 
+Objetivos
 
+    praticar html/css/js
+    conhecer gh pages (hospedagem)
+    preparar para fazer portifólio pessoal
+
+> **Elementos básicos que irá ter na página dinâmica: gh-pages** 
 - Elementos de Paragrafos
 - HTML Headings 
 - HTML list
 - HTML Anchor Tags 
 - HTML imagem
-- HTRML boilerPlate
+- HTML boilerPlate
 
-> Importante
-1. usando MDN como recurso
-1. Inspetor do chrome
+## Links
+>HTML Básico
+- __[dinamic-web pages link](https://victorhreinert.github.io/html5/1-Archor%20tag%20Html.html)__ - próposito é criar pagina dinâmica com html/css/js no github.
 
-_legal para saber>_
->VSCODE Formatação no salvamento.
 
-**Elementos básicos:**
+    
 
-**<html>** 
-1. O elemento HTML <html> representa a raiz de um HTML ou XHTML documento. 
-Todos os outros elementos devem ser descendentes desse elemento.
+
+
 
 
 
