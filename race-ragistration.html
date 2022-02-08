@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+
+     <form action="/registration">
+       <h1> Race Ragistration</h1>
+      <section>
+        <p>
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="First Name"
+            name="firt-name"
+            required
+          />
+
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="last-name"
+            placeholder="Last Name"
+            required
+          />
+        </p>
+        <label for="type-race">Select a Race:</label>
+        <p>
+          <label for="type-race">Fun Run 5k:</label>
+          <input type="radio" id="5k" name="type-race" required />
+          <br />
+          <label for="10k">Half Marathon<strong>10k</strong>: </label>
+          <input type="radio" id="10k" name="type-race" />
+          <br />
+          <label for="20k">Full Marathon <strong>20k</strong>:</label>
+          <input type="radio" id="20k" name="type-race" />
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="password"
+            required
+            id="password"
+          />
+        </p>
+        <p>
+          <label for="age-grup">Age Grup</label>
+          <select name="age" id="age-grup" required>
+            <option value="">Please choose an age</option>
+            <option value="under18">under 18</option>
+            <option value="pre-aldut">18-25</option>
+            <option value="aldut">26-36</option>
+            <option value="wine">37-50</option>
+            <option value="oldwine">50 +</option>
+          </select>
+        </p>
+      </section>
+<hr>
+          <h4>Validations- html requirement </h4>
+          <h4>Sign up account for marathon prise </h4>
+
+    <section>
+         
+        <form action="">
+            <p>
+            <label for="name">Enter first name:</label>
+            <!-- required um atributo necessário e importante do dia a dia do dev front. -->
+            <!--fará com o que o botão só enviará os dados ao servidor preenchido o campo com os dados necessario.-->
+            <input type="text" id="name" placeholder="Fisrt name" name="id-name" required>
+            </p>
+             <p>  
+            <label for="user.valid">Username:</label>
+            <input type="text" id="user.valid" name="username" placeholder="Username" required minlength="3" maxlength="10"> 
+                    <!-- required para username será de 3 caractere conforme definido no input-->
+            </p> 
+            <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="e-mail"
+                min="5" maxlength="25"
+                required placeholder="E-mail">
+            <!-- required para email será a obrigatoriedade do @ -->
+            </p>
+             <p>
+            <label for="url-id">URL:</label>
+            <input type="url" id="url-id" placeholder="Url" name="url" required min="5"/>
+             <!-- required url é "http:www.(...).com" -->
+             </p>
+            <p>
+            <button>Submit</button>
+            </p>
+        </form>
+        </section>
+        <hr>
+    <footer>
+      <button>
+        <a href="home.html"> Voltar </a>
+      </button>
+    </footer>
+  </body>
+</html>
