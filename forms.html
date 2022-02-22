@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forms.css">
     <title>Forms</title>
   </head>
 
         <h2>Forms request</h2>
-    <section>
+    <section class="form">
     <!--Simplificando os formularios e anexando com outros sites com form action -->
     <form action="https://www.reddit.com/search/">
       <label for="search-rd">
-        <strong> Reddit</strong> form button
+        <span id="rd"><strong> Reddit</strong></span> form button
       </label>
       <input type="text" name="q" id="search-rd" placeholder="Search" />
       <button><strong>Submit to Reddit </strong></button>
@@ -20,23 +21,23 @@
     <p>
     <form action="https://www.google.com/search?">
       <label for="search-gg">
-        <strong>Google</strong> form button
+        <span id="gg"><strong>Google</strong></span> form button
       </label>
       <input type="text" name="q" placeholder="Search" id="search-gg" />
       <button><strong>Submit to Google</strong></button>
     </form>
-    </p>
+    </p> 
  
     <form action="https://www.youtube.com/results?">
       <label for="search-yt"
-        ><strong> Youtube </strong> form button</label
+        ><span id="yt"><strong> Youtube </strong></span> form button</label
       >
       <input type="text" name="search_query" id="search-yt" placeholder="Search" />
       <button><strong>Submit to Youtube </strong></button>
     </form>
     <p>
     <form action="https://www.facebook.com/search/top/?">
-      <label for="search-fb"> <strong>Facebook</strong> form button</label>
+      <label for="search-fb"> <span id="fb"><strong>Facebook</strong></span> form button</label>
       <input type="text" placeholder="Search" name="q" id="search-fb" />
       <button><strong>Submit to Facebook</strong></button>
     </p>
@@ -56,7 +57,7 @@
     </section>
 
    
-    <h6> Reclamações</h6>
+    <h3> Reclamações</h3>
     <section>
             <label for="txt">Any Special Request?</label>
             <p>
