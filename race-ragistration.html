@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="race-ragistration.css" />
     <title>Registration</title>
   </head>
   <body>
+    <header class="header">
+      <a href=" "><img src="" alt="Logo" /></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="forms.html">Html Forms</a></li>
+          <li><a href="tables.html">More tables</a></li>
+        </ul>
+      </nav>
+    </header>
 
-     <form action="/registration">
-       <h1> Race Ragistration</h1>
-      <section>
-        <p>
+    <form class="form-section" action="/registration">
+      <h1>Race Ragistration</h1>
+       <p>
+      <section class="form1">
           <label for="firstname">First Name:</label>
           <input
             type="text"
@@ -30,51 +41,49 @@
             required
           />
         </p>
-        <label for="type-race">Select a Race:</label>
-        <p>
-          <label for="type-race">Fun Run 5k:</label>
-          <input type="radio" id="5k" name="type-race" required />
-          <br />
-          <label for="10k">Half Marathon<strong>10k</strong>: </label>
-          <input type="radio" id="10k" name="type-race" />
-          <br />
-          <label for="20k">Full Marathon <strong>20k</strong>:</label>
-          <input type="radio" id="20k" name="type-race" />
-        </p>
-
-        <p>
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail"
-            required
-          />
-
-          <label for="password">Password</label>
-          <input
-            type="password"
-            placeholder="password"
-            required
-            id="password"
-          />
-        </p>
-        <p>
-          <label for="age-grup">Age Grup</label>
-          <select name="age" id="age-grup" required>
-            <option value="">Please choose an age</option>
-            <option value="under18">under 18</option>
-            <option value="pre-aldut">18-25</option>
-            <option value="aldut">26-36</option>
-            <option value="wine">37-50</option>
-            <option value="oldwine">50 +</option>
-          </select>
-        </p>
       </section>
-<hr>
+      <label for="type-race">Select a Race:</label>
+      <p>
+        <label for="type-race">Fun Run 5k:</label>
+        <input type="radio" id="5k" name="type-race" required />
+        <br />
+        <label for="10k">Half Marathon<strong>10k</strong>: </label>
+        <input type="radio" id="10k" name="type-race" />
+        <br />
+        <label for="20k">Full Marathon <strong>20k</strong>:</label>
+        <input type="radio" id="20k" name="type-race" />
+      </p>
+
+      <p>
+      <section class="form1">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="password" required id="password" />
+      </p>
+      </section>
+      <p>
+        <label for="age-grup">Age Grup</label>
+        <select name="age" id="age-grup" required>
+          <option value="">Please choose an age</option>
+          <option value="under18">under 18</option>
+          <option value="pre-aldut">18-25</option>
+          <option value="aldut">26-36</option>
+          <option value="wine">37-50</option>
+          <option value="oldwine">50 +</option>
+        </select>
+      </p>
+    </form>
+    <hr />
     <footer>
-      <button>
+      <button class="button">
         <a href="home.html"> Voltar </a>
       </button>
     </footer>
