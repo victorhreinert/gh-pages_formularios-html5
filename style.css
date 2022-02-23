@@ -1,20 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: aliceblue;
+    box-sizing: border-box;
 
+}
+a{
+    box-sizing: border-box;
 }
 
 .imagem{
     display: flex;
     justify-content: center;
 }
-.imagem-logo-img{
-    width: auto;
-    height: auto;
+.imagem-logo-img {
     cursor: pointer;
-
 }
 
 h1{
@@ -26,28 +26,30 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
- 
+}
 
-}    
+.header a {
+    text-decoration:  none;
+    color: white;
+}
 
 .menu ul {
     display: flex;
-
-
 }
-
 .menu ul li {
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    
+    display: block;
 }
-.menu ul li a{
-    text-decoration: none;
-    color: white;
-    padding-left: 30px;
-    margin: 2px;
+.menu ul li:hover{
+    background-color: #333;
 }
+.menu ul li a {
+    padding: 0.5rem 1.5rem;
+    display: block;
+  
+}
+
+
 @media (max-width: 464px){
     .menu ul li a {
         margin: 0;

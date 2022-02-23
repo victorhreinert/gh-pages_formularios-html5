@@ -1,15 +1,94 @@
 body{
     background-color: aliceblue;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+   
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #555;
+    
+}
+
+.menu ul{
+      display: flex;
+      justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+    
+}
+
+.menu ul li a {
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    display:block;
+}
+
+.menu li:hover{
+    background-color: #333;
+}
+
+@media (max-width: 850px){
+    .menu ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px){
+    .menu ul {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding-bottom: 2px;
+    }
+    .menu ul li {
+        padding-bottom: 7px;
+    }
+    .form{
+        font-size: 12px;
+    }
+
+    form .button{
+    font-size: 10px;
+    margin: 14px 9px;
+
+}
+
+
+}
+
+@media (max-width: 320px){
+    .menu ul li a {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 283px){
+    .menu ul li a {
+        font-size: 10px;
+    }
 }
 
 form #rd{
     color: orange;
 
 }
+
 form #gg{
-    color: yellowgreen
-    ;
-  
+    color: yellowgreen;
+ 
 
 }
 form #yt{
@@ -18,4 +97,21 @@ form #yt{
 }
 form #fb{
     color: cornflowerblue;
+}
+
+.name {
+    width: 80%;
+}
+.home-button a{
+    text-decoration: none;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.home-button:hover{
+    background-color: #333;
+}
+.home-button a:hover{
+
+    color: white;
 }
