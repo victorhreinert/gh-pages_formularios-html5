@@ -13,9 +13,13 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+    }
+     .menu ul li {
+        padding-bottom: 10px;
     }
 }
+
+
 @media (max-width: 550px) {
     .form1{
     display: flex;
