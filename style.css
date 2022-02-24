@@ -8,7 +8,10 @@ body {
 a{
     box-sizing: border-box;
 }
-
+.logo{
+    font-size: 1.5rem;
+    margin: .5rem ;
+}
 .imagem{
     display: flex;
     justify-content: center;
@@ -38,28 +41,24 @@ h1{
 
 .menu ul {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 .menu ul li {
     list-style: none;
 }
-.menu ul li a:hover{
+.menu ul li:hover{
     background-color: #333;
-    transition: all 1s;
+  
 }
 .menu ul li a {
-    padding: 0.5rem 1.5rem;
+    padding: 1rem;
     display: block;
   
 }
 
 
-@media (max-width: 464px){
-    .menu ul li a {
-        margin: 0;
-        padding: 0;
-    }
 
-}
 @media (max-width: 464px){
     .menu ul  {
         display: flex;

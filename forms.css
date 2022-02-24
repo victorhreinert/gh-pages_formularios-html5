@@ -18,10 +18,15 @@ body{
     background-color: #555;
     
 }
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
 
 .menu ul{
       display: flex;
-      justify-content: space-between;
+      margin: 0;
+      padding: 0;
 }
 
 .menu ul li {
@@ -32,13 +37,14 @@ body{
 .menu ul li a {
     text-transform: uppercase;
     display:block;
-    padding: 0rem 1.5rem;
+    padding: 1rem;
 }
 
-.menu ul li a:hover{
-    color: #333;
-    transition: all 1s;
+.menu ul li:hover{
+    background-color: #333;
+    transition: all 2s;
 }
+
 
 @media (max-width: 500px){
     .menu ul  {
